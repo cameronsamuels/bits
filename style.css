@@ -1,0 +1,105 @@
+/* By Cameron Samuels | MIT License */
+
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background: #555;
+	font-family: monospace;
+}
+
+header {
+  padding: 1vmin 0;
+}
+
+h1 {
+  margin: 2vmin;
+  color: #eee;
+  font-size: 10vmin;
+  text-align: center;
+}
+
+main {
+	text-align: center;
+}
+
+main div div {
+	display: inline-block;
+	width: 7vmin;
+	height: 4vmin;
+	padding: 1vmin 3vmin;
+	margin: .7vmin;
+	background: #aaa;
+	color: #555;
+	border-radius: 6px;
+	font-size: 3vmin;
+	line-height: 4vmin;
+	text-align: center;
+	user-select: none;
+}
+
+#js-bits div {
+  height: 7vmin;
+  line-height: 7vmin;
+  padding: 3vmin;
+  font-size: 5vmin;
+  cursor: pointer;
+}
+
+#js-bits div[val="1"] {
+	background:  #eee;
+}
+
+#js-bits div:active {
+  background: #ccc;
+}
+
+#js-pows div {
+  padding: 1vmin 3vmin 1.5vmin;
+  font-size: 2vmin;
+  vertical-align: text-bottom;
+  line-height: 3.5vmin;
+}
+
+#js-pows div:before {
+  content: "2";
+  font-size: 3vmin;
+  vertical-align: text-top;
+}
+
+#js-num {
+  display: inline-block;
+	line-height: 10vmin;
+	padding: 1vmin 3vmin;
+	margin: .7vmin 2vmin;
+	background: #aaa;
+	color: #555;
+	font-size: 10vmin;
+	border-radius: 6px;
+	text-align: center;
+}
+
+#js-num:after {
+  content: "10";
+  font-size: 5vmin;
+  vertical-align: sub;
+  line-height: 1.4;
+}
+
+footer {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  color: #eee;
+  font-size: 2vmin;
+}
+
+a {
+  color: inherit;
+}
+
+@media screen and (max-height: 500px) {
+  body {
+    zoom: 1.5;
+  }
+}
